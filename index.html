@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
     <link rel="stylesheet" href="estilos/mobile.css">
+    <link rel="stylesheet" href="estilos/responsividade.css">
 </head>
 <body>
     <header>
@@ -22,7 +23,7 @@
         </nav>
     </header>
 
-    <main id="#inicio">
+    <main id="inicio">
         <section class="apresentacao ">
             <h1>Rafael da Costa Silva</h1>
             <p>DESENVOLVEDOR ● FRONT-END</p>
@@ -41,7 +42,7 @@
             </div>
         </section>
 
-        <section class="slide-tecno">
+        <section class="slide-tecno" id="slideP">
             <h2>Tecnologias que trabalho:</h2>
             <div class="tecnologias">
                 <img src="imagens/logo-html5.png" alt="Logo HTML5" class="slides-tecnologias">
@@ -49,76 +50,90 @@
                 <img src="imagens/logo-java-script.png" alt="Logo JavaScript" class="slides-tecnologias">
             </div>
         </section>
+
+        <section class="slide-tecno" id="slideG">
+            <h2>Tecnologias que trabalho:</h2>
+            <div class="tecnologias">
+                <img src="imagens/logo-html5.png" alt="Logo HTML5">
+                <img src="imagens/logo-css3.png" alt="Logo CSS3">
+                <img src="imagens/logo-java-script.png" alt="Logo JavaScript">
+            </div>
+        </section>
     </main>
     
     <section id="sobre">
-        <section class="perfil">
-            <h2>Sobre mim</h2>
-            <img src="imagens/perfil-pequeno.jpg" alt="Minha foto" class="foto-pequena">
-            <img src="imagens/perfil-grande.jpg" alt="Minha foto" class="foto-grande">
-        </section>
+        <h2>Sobre mim</h2>
 
-        <section class="texto-sobre">
-            <p><span style="font-size: 30px;">Olá</span>, meu nome é Rafael, tenho 20 anos e sou um entusiasta do desenvolvimento Front-End, além de músico nas horas vagas.</p>
-
-            <p>Minha jornada na programação começou quando assisti um vídeo do Curso em Vídeo sobre JavaScript, e desde então, fiquei apaixonado pelo mundo do desenvolvimento. Iniciei meus estudos em JavaScript e HTML5-CSS3 com grande desejo de evolução, e estou determinado a me tornar um Programador Full-Stack no futuro.</p>
-
-            <p>Atualmente, estou aprimorando minhas habilidades por meio do conteúdo disponível na web e pela plataforma do Curso em Vídeo onde já conquistei certificações em alguns cursos. Além disso, crio meus próprios projetos para exercitar minha criatividade e consolidar meus conhecimentos.</p>
-
-            <p>Acredito que o desenvolvimento Front-End é uma área em constante evolução, isso me motiva a sempre buscar novos desafios e oportunidades para crescer como desenvolvedor.</p>
-        </section>
+        <div class="flex-sobre">
+            <section class="perfil">
+                <img src="imagens/perfil-pequeno.jpg" alt="Minha foto" class="foto-pequena">
+                <img src="imagens/perfil-grande.jpg" alt="Minha foto" class="foto-grande">
+            </section>
+            <section class="texto-sobre">
+                <p><span style="font-size: 30px;">Olá</span>, meu nome é Rafael, tenho 20 anos e sou um entusiasta do desenvolvimento Front-End, além de músico nas horas vagas.</p>
+                <p>Minha jornada na programação começou quando assisti um vídeo do Curso em Vídeo sobre JavaScript, e desde então, fiquei apaixonado pelo mundo do desenvolvimento. Iniciei meus estudos em JavaScript e HTML5-CSS3 com grande desejo de evolução, e estou determinado a me tornar um Programador Full-Stack no futuro.</p>
+                <p>Atualmente, estou aprimorando minhas habilidades por meio do conteúdo disponível na web e pela plataforma do Curso em Vídeo onde já conquistei certificações em alguns cursos. Além disso, crio meus próprios projetos para exercitar minha criatividade e consolidar meus conhecimentos.</p>
+                <p>Acredito que o desenvolvimento Front-End é uma área em constante evolução, isso me motiva a sempre buscar novos desafios e oportunidades para crescer como desenvolvedor.</p>
+            </section>
+        </div>
     </section>
 
     <section id="projetos">
         <h2>Projetos</h2>
 
-        <h3>Snake Game</h3>
-        <section class="container-projetos">
+        <div class="flex-projetos">
             <div>
-                <img src="imagens/projeto-snake-game.png" alt="Projeto Snake Game">
+                <h3>Snake Game</h3>
+                <section class="container-projetos">
+                    <div>
+                        <img src="imagens/projeto-snake-game.png" alt="Projeto Snake Game">
+                    </div>
+                    <div class="container-texto-projeto">
+                        <p>O "Snake Game" é um clássico jogo da cobrinha desenvolvido utilizando HTML, CSS e JavaScript. Neste projeto, os princípios básicos da programação front-end foram aplicados para criar uma experiência interativa e divertida.</p>
+                    </div>
+                    <div class="container-btn-projetos">
+                        <button>
+                            <a href="">
+                                <span>Ver Projeto</span>
+                                <span class="material-symbols-outlined">desktop_windows</span>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="">
+                                <span>Código Fonte</span>
+                                <span class="material-symbols-outlined">code</span>
+                            </a>
+                        </button>
+                    </div>
+                </section>
             </div>
-            <div>
-                <p>O "Snake Game" é um clássico jogo da cobrinha desenvolvido utilizando HTML, CSS e JavaScript. Neste projeto, os princípios básicos da programação front-end foram aplicados para criar uma experiência interativa e divertida.</p>
-            </div>
-            <div class="container-btn-projetos">
-                <button>
-                    <a href="">
-                        <span>Ver Projeto</span>
-                        <span class="material-symbols-outlined">desktop_windows</span>
-                    </a>
-                </button>
-                <button>
-                    <a href="">
-                        <span>Código Fonte</span>
-                        <span class="material-symbols-outlined">code</span>
-                    </a>
-                </button>
-            </div>
-        </section>
 
-        <h3>Paint</h3>
-        <section class="container-projetos">
             <div>
-                <img src="imagens/projeto-paint.png" alt="Projeto Paint">
+                <h3>Paint</h3>
+                <section class="container-projetos">
+                    <div>
+                        <img src="imagens/projeto-paint.png" alt="Projeto Paint">
+                    </div>
+                    <div class="container-texto-projeto">
+                        <p>O projeto "Paint" é uma aplicação web que oferece uma experiência de pintura digital simples e intuitiva. Desenvolvido utilizando HTML, CSS e JavaScript, o Paint permite que os usuários expressem sua criatividade através de diferentes ferramentas e opções de personalização.</p>
+                    </div>
+                    <div class="container-btn-projetos">
+                        <button>
+                            <a href="">
+                                <span>Ver Projeto</span>
+                                <span class="material-symbols-outlined">desktop_windows</span>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="">
+                                <span>Código Fonte</span>
+                                <span class="material-symbols-outlined">code</span>
+                            </a>
+                        </button>
+                    </div>
+                </section>
             </div>
-            <div>
-                <p>O projeto "Paint" é uma aplicação web que oferece uma experiência de pintura digital simples e intuitiva. Desenvolvido utilizando HTML, CSS e JavaScript, o Paint permite que os usuários expressem sua criatividade através de diferentes ferramentas e opções de personalização.</p>
-            </div>
-            <div class="container-btn-projetos">
-                <button>
-                    <a href="">
-                        <span>Ver Projeto</span>
-                        <span class="material-symbols-outlined">desktop_windows</span>
-                    </a>
-                </button>
-                <button>
-                    <a href="">
-                        <span>Código Fonte</span>
-                        <span class="material-symbols-outlined">code</span>
-                    </a>
-                </button>
-            </div>
-        </section>
+        </div>
     </section>
 
     <section id="certificado">

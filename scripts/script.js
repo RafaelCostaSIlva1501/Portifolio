@@ -6,16 +6,15 @@ btnMenu.addEventListener('click', function() {
     menu.classList.toggle('open');
 });
 
-//Slides da área de tecnologias de trabalho
-document.addEventListener('DOMContentLoaded', trocarTecnologia);
+document.addEventListener('DOMContentLoaded', trocarTecnologia)
 
-const tecSlide = document.querySelectorAll('.slides-tecnologias');
+tecSlide = document.querySelectorAll('.slides-tecnologias');
 let indice = 0;
 
 function trocarTecnologia() {
-    for (let i = 0; i < tecSlide.length; i++ ) {
-        tecSlide[i].style.display = 'none'
-    };
+    for (let i = 0; i < tecSlide.length; i++) {
+        tecSlide[i].style.display = 'none';
+    }
 
     tecSlide[indice].style.display = 'block';
 
@@ -113,10 +112,3 @@ setInterval(trocarCleanCode, 7000);
 setInterval(trocarComunicacao, 14000);
 setInterval(trocarAprendizado, 21000);
 setInterval(trocarDesign, 28000);
-
-
-
-
- 
-
-

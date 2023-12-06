@@ -1,86 +1,65 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 375px) {
-
-    .info-slide{
-        padding: 20px;
-    }
-
-
-    .logo-certificado{
-        display: none;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    header{
-        display: flex;
-        flex-direction: column;
-        height: max-content;
-    }
-
-    .tela-grande{
-        display: block;
-        background-color: var(--texto-primario);
-        color: var(--texto-terceario);
-    }
-
-    .tela-pequeno{
-        display: none;
-    }
-    
-    .container-btn-menu{
+@media screen and (min-width: 987px) {
+    #btnMenu {
         display: none;
     }
 
-    nav{
-        display: block;
+    nav {
+        padding: none;
         max-height: max-content;
-        transition: none;
     }
 
-    nav ul{
+    nav ul {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        max-height: 40px;
+        align-items: center;
     }
 
-    .container-sobre-mim{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .container-sobre-mim div{
-        margin: 30px 10px;
-    }
-
-    .container-sobre-mim p{
-        text-align: justify;
-    }
-
-    .imagem-pequena{
+    #slideP {
         display: none;
     }
 
-    .imagem-grande{
-        display: block;
-        width: 370px;
-        height: 486px;
-        border-radius: 5px;
-
+    #slideG {
+        display: flex;
     }
 
-    .container-slides{
-        margin: 15px;
-    }
-
-}
-
-@media screen and (min-width: 1024px) {
-    .container-área-slides{
+    .tecnologias {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
+    }
+
+    .tecnologias img {
+        display: block;
+        animation: none;
+    }
+
+    .flex-sobre {
+        flex-direction: row;
+    }
+
+    .foto-pequena {
+        display: none;
+    }
+
+    .foto-grande {
+        display: block;
+        width: 300px;
+        border-radius: 1px;
+    }
+
+    .flex-projetos {
+        flex-direction: row;
+    }
+
+    .container-projetos {
+        width: 400px;
+        margin: 0px 10px;
+    }
+
+    .container-texto-projeto {
+        height: 150px;
     }
 }

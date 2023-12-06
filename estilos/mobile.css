@@ -93,6 +93,10 @@ ul li a {
     color: white;
 }
 
+#inicio {
+    border-bottom: 2px solid white;
+}
+
 .apresentacao {
     text-align: center;
     padding: 20px 0px;
@@ -133,11 +137,11 @@ ul li a {
     color: white;
 }
 
-.slogan span{
+.slogan span {
     margin: 2px 0px;
 }
 
-.animation-slogan{
+.animation-slogan {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -170,22 +174,25 @@ ul li a {
     }
 }
 
-.slide-tecno{
+#slideG {
+    display: none;
+}
+
+.slide-tecno {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     height: min-content;
-    border-bottom: 2px solid white;
     position: relative;
 }
 
-.slide-tecno h2{
+.slide-tecno h2 {
     color: var(--cor03);
     text-align: center;
 }
 
-.tecnologias{
+.tecnologias {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -222,12 +229,18 @@ ul li a {
 #sobre {
     background-color: var(--cor01A);
     border-bottom: 2px solid white;
-    padding-top: 70px;
+    padding: 70px 10px 0px 10px;
 }
 
-.perfil h2 {
+#sobre h2 {
     text-align: center;
     color: var(--cor01);
+    padding: 10px 0px;
+}
+
+.flex-sobre {
+    display: flex;
+    flex-direction: column;
 }
 
 .foto-pequena {
@@ -243,6 +256,9 @@ ul li a {
 }
 
 .texto-sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     padding: 20px;
 }
 
@@ -262,18 +278,25 @@ ul li a {
 
 #projetos h2 {
     color: var(--corTexto);
+    padding: 20px 0px;
 }
 
 #projetos h3 {
     color: var(--corTexto);
-    margin-top: 50px;
+    text-align: center;
+}
+
+.flex-projetos {
+    display: flex;
+    flex-direction: column;
 }
 
 .container-projetos {
-    width: 95%;
+    width: 75%;
     border-radius: 10px;
     border: 2px solid white;
     box-shadow: 0px 0px 5px var(--cor01);
+    margin: 0px auto;
 }
 
 .container-projetos img {
