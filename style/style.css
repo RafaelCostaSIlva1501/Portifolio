@@ -279,7 +279,6 @@ ul li a {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    min-height: 100vh;
 }
 
 /*Título da sessão*/
@@ -307,7 +306,7 @@ ul li a {
     padding: 10px;
     border-radius: 10px;
     background-color: var(--corBaseEscura);
-    width: 400px;
+    width: 380px;
     line-height: 20px;
 }
 
@@ -333,6 +332,12 @@ ul li a {
     cursor: pointer;
 }
 
+.project-text button:hover {
+    background-color: var(--corTexto);
+    border: 2px solid var(--corTexto);
+    color: var(--corBaseEscura);
+}
+
 .project-text button:active {
     transform: scale(0.9);
 }
@@ -345,7 +350,7 @@ ul li a {
     transform: translate(-50%, -50%);
     width: 95vw;
     max-width: 600px;
-    height: 98vh;
+    height: 95vh;
     background-color: var(--corBaseEscura2);
     border: 1px solid var(--corBaseClara);
     z-index: 1;
