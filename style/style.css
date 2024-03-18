@@ -278,7 +278,7 @@ ul li a {
 #projetos {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    padding: 0px 0px 50px 0px;
 }
 
 /*Título da sessão*/
@@ -306,7 +306,8 @@ ul li a {
     padding: 10px;
     border-radius: 10px;
     background-color: var(--corBaseEscura);
-    width: 380px;
+    width: 90vw;
+    max-width: 450px;
     line-height: 20px;
 }
 
