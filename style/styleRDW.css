@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+/*RDW (Responsive Web Design)*/
+
+/*Paleta de cores dentro do root*/
+:root {
+    --cor01: #f2d541;
+    --cor01A: #f2d54115;
+    --cor02: #d92353;
+    --cor02A: #d92353a1;
+    --cor03: #60b6bf;
+    --cor03A: #60b6bf9d;
+    --cor04: #1d803a;
+    --cor04A: #1d803b6c;
+    --corBaseEscura: #212529;
+    --corBaseClara: #788a9c;
+    --corTexto: #d4d4d4;
+}
+
+@media screen and (min-width: 987px) {
+    /*Cabeçalho (Desktop)*/
+    header {
+        width: 100%;
+    }
+
+    /*Esconde o botão que abre e fecha o menu (Desktop)*/
+    header button {
+        display: none;
+    }
+
+    /*Exibe o texto inicial*/
+    .intro-desktop {
+        display: block;
+    }
+
+    .intro-mobile {
+        display: none;
+    }
+
+    /*Navegação (Desktop)*/
+    nav {
+        max-height: max-content;
+        width: 100%;
+    }
+
+    /*Lista (Desktop)*/
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*Itens da lista (Desktop)*/
+    ul li {
+        color: white;
+    }
+
+    /*Itens da lista ao passar o mouse por cima (Desktop)*/
+    ul li:hover {
+        background-color: var(--cor02);
+    }
+
+    /*-------------------------------------------------*/
+    /*Alinhamento de texto e imagem da sessão sobre (Desktop)*/
+    #sobre section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /*Div que contém o texto e a foto da sessão sobre (Desktop)*/
+    #sobre section div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /*Parágrafos da sessão sobre (Desktop)*/
+    #sobre p {
+        width: 500px;
+    }
+
+    /*Esconde para dispositivos mobile (Desktop)*/
+    .foto-mobile {
+        display: none;
+    }
+
+    /*Foto para desktop*/
+    .foto-desktop {
+        display: block;
+        width: 308px;
+        border: 2px solid var(--cor01A);
+        border-radius: 10px;
+    }
+
+    /*Container que contém os projetos (Desktop)*/
+    .container-project {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    /*Projeto (Desktop)*/
+    .project {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 270px;
+        height: 400px;
+    }
+
+    /**/
+    .project img {
+        border-radius: 5px;
+        width: 250px;
+    }
+
+    .project-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: var(--corTexto);
+        height: 100%;
+    }
+
+    .project-text p {
+       text-align: center;
+    }
+
+    .project-text h3 {
+        text-align: center;
+    }
+
+    .project-text button {
+        width: 100%;
+    }
+
+    #certification {
+        flex-direction: row;
+    }
+}

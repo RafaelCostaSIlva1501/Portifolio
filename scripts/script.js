@@ -1,114 +1,86 @@
-//Abrir menu de navegação
-var menu = document.getElementById('menu');
-var btnMenu = document.getElementById('btnMenu');
-
-btnMenu.addEventListener('click', function() {
-    menu.classList.toggle('open');
+document.getElementById("btnMenu").addEventListener("click", function () {
+    document.getElementById("menu").classList.toggle('open');
 });
 
-document.addEventListener('DOMContentLoaded', trocarTecnologia)
+const btnShowProject = document.querySelectorAll(".btn-show-project");
+const showProject = document.querySelectorAll(".show-project");
 
-tecSlide = document.querySelectorAll('.slides-tecnologias');
-let indice = 0;
+showProject[0].style.display = "flex";
 
-function trocarTecnologia() {
-    for (let i = 0; i < tecSlide.length; i++) {
-        tecSlide[i].style.display = 'none';
+//Exibe e esconde os projetos exibidos no painel
+btnShowProject.forEach(function (btn, index) {
+    btn.addEventListener("click", function () {
+        openProjectsPanel();
+        showProject.forEach((show) => (show.style.display = "none"));
+        showProject[index].style.display = "flex";
+    });
+});
+
+//Abre o painel de exibição de projetos
+const openProjectsPanel = () => {
+    document.getElementById("showProject").style.display = "flex";
+};
+
+//Fecha o painel de exibição de projetos
+const closeProjectsPanel = () => {
+    document.getElementById("showProject").style.display = "none";
+};
+
+const btnReplaceProject = document.querySelectorAll(".btn-replace-project");
+const projectContent = document.querySelectorAll(".show-project-content");
+
+projectContent[0].style.display = "flex";
+
+btnReplaceProject.forEach(function (btn, index) {
+    btn.addEventListener("click", function () {
+        projectContent.forEach((content) => (content.style.display = "none"));
+        projectContent[index].style.display = "flex";
+    });
+});
+
+let infoIndex = 0;
+
+const replaceInfoProject = (classImgTxt) => {
+    const replaceImgTxt = document.querySelectorAll(classImgTxt);
+
+    replaceImgTxt.forEach((replace) => (replace.style.display = "none"));
+
+    if (infoIndex < 0) {
+        infoIndex = replaceImgTxt.length - 1;
+    } else if (infoIndex > replaceImgTxt.length - 1) {
+        infoIndex = 0;
     }
 
-    tecSlide[indice].style.display = 'block';
+    replaceImgTxt[infoIndex].style.display = "block";
+};
 
-    indice = (indice + 1) % tecSlide.length;
-}
+const backInfo = (classImgTxt) => {
+    infoIndex = infoIndex - 1;
+    replaceInfoProject(classImgTxt);
+};
 
-setInterval(trocarTecnologia, 7000);
+const nextInfo = (classImgTxt) => {
+    infoIndex = infoIndex + 1;
+    replaceInfoProject(classImgTxt);
+};
 
-//Trocar slides da área de "Certificados"
-function trocarCertificado(certificado, btnCertifi) {
-    const certificados = {
-        htmlcss: document.getElementById('certiHTMLCSS'),
-        javascript: document.getElementById('certiJS'),
-        aws: document.getElementById('certiAWS'),
-    };
+const replaceSlide = (slideClass, btnSlideClass) => {
+    const slide = document.querySelectorAll(slideClass);
+    const btnSlide = document.querySelectorAll(btnSlideClass);
 
-    for (let i in certificados) {
-        certificados[i].style.display = i === certificado ? 'block' : 'none';
-    }
+    btnSlide.forEach((btn, index) => {
+        btn.addEventListener("click", () => {
+            slide.forEach((slide) => (slide.style.display = "none"));
+            slide[index].style.display = "flex";
 
-    const btns = {
-        btnHTML: document.getElementById("btnHTML"),
-        btnJS: document.getElementById("btnJS"),
-        btnAWS: document.getElementById("btnAWS"),
-    }
+            btnSlide.forEach((btn) => (btn.style.border = "none"));
+            btn.style.border = "2px solid black";
+        });
+    });
 
-    for (let i in btns) {
-        btns[i].style.border = i === btnCertifi ? '2px solid black' : '2px solid transparent';
-    }
-}
+    btnSlide[0].style.border = "2px solid black";
+};
 
-function certificadoHtmlCss() {
-    trocarCertificado('htmlcss', 'btnHTML');
-}
+replaceSlide(".certification-slide", ".certification-btn");
 
-function certificadoJS() {
-    trocarCertificado('javascript', 'btnJS');
-}
-
-function certificadoAWS() {
-    trocarCertificado('aws', 'btnAWS');
-}
-document.addEventListener('DOMContentLoaded', certificadoHtmlCss);
-
-setInterval(certificadoHtmlCss, 9000);
-
-setInterval(certificadoJS, 18000);
-
-setInterval(certificadoAWS, 27000);
-
-//Trocar slides da área de "Diferenciais"
-function trocarDiferencial(diferencial, btnDiferencial) {
-    const diferenciais = {
-        cleanCode: document.getElementById('cleanCode'),
-        comunicacao: document.getElementById('comunicacao'),
-        aprendizado: document.getElementById('aprendizado'),
-        design: document.getElementById('design'),
-    }
-
-    for (let i in diferenciais) {
-        diferenciais[i].style.display = i === diferencial ? 'block' : 'none';
-    }
-
-    const btnDiferenciais = {
-        btnCleanCode: document.getElementById('btnCleanCode'),
-        btnComunicacao: document.getElementById('btnComunicacao'),
-        btnAprendizado: document.getElementById('btnAprendizado'),
-        btnDesign: document.getElementById('btnDesign'),
-    }
-
-    for (let i in btnDiferenciais) {
-        btnDiferenciais[i].style.border = i === btnDiferencial ? '2px solid black' : '2px solid transparent';
-    }
-}
-
-document.addEventListener('DOMContentLoaded', trocarCleanCode);
-
-function trocarCleanCode() {
-    trocarDiferencial('cleanCode', 'btnCleanCode');
-}
-
-function trocarComunicacao() {
-    trocarDiferencial('comunicacao', 'btnComunicacao');
-}
-
-function trocarAprendizado() {
-    trocarDiferencial('aprendizado', 'btnAprendizado');
-}
-
-function trocarDesign() {
-    trocarDiferencial('design', 'btnDesign');
-}
-
-setInterval(trocarCleanCode, 7000);
-setInterval(trocarComunicacao, 14000);
-setInterval(trocarAprendizado, 21000);
-setInterval(trocarDesign, 28000);
+replaceSlide(".diferencial-slide", ".diferencial-btn");

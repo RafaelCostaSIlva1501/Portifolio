@@ -4,239 +4,437 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio | Rafael da Costa Silva</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
-    <link rel="stylesheet" href="estilos/mobile.css">
-    <link rel="stylesheet" href="estilos/responsividade.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/styleRDW.css">
 </head>
 <body>
+
     <header>
-        <button type="menu" id="btnMenu"><span class="material-symbols-outlined">menu</span></button>
+        
+        <section class="intro-desktop">
+            <h1>Rafael da Costa Silva</h1>
+            <p>DESENVOLVEDOR ● FRONT-END</p>
+        </section>
+
+        <button>
+            <span class="material-symbols-outlined" id="btnMenu">menu</span>
+        </button>
+
         <nav id="menu">
             <ul>
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#certificado">Certificações</a></li>
+                <li><a href="#certification">Certificações</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main id="inicio">
-        <section class="apresentacao ">
+        <section class="intro-mobile">
             <h1>Rafael da Costa Silva</h1>
             <p>DESENVOLVEDOR ● FRONT-END</p>
-            <section class="redes">
-                <a href="https://github.com/RafaelCostaSIlva1501" target="_blank"><img src="imagens/github-logo.png" alt="Github logo"></a>
-                <a href="https://www.linkedin.com/in/rafael-da-costa-silva-29853b287/" target="_blank"><img src="imagens/linkedin-logo.png" alt="Linkedin logo"></a>
-                <a href="https://www.instagram.com/rafaelalloces/" target="_blank"><img src="imagens/instagram-logo.png" alt="Instagram logo"></a>
-            </section>
         </section>
-        
+
+        <section class="midias">
+            <a href="https://github.com/RafaelCostaSIlva1501" target="_blank">
+                <img src="img/github-logo.png" alt="Github logo">
+            </a>
+
+            <a href="https://www.linkedin.com/in/rafael-da-costa-silva-29853b287/" target="_blank">
+                <img src="img/linkedin-logo.png" alt="Linkedin logo">
+            </a>
+            
+            <a href="https://www.instagram.com/rafaelalloces/" target="_blank">
+                <img src="img/instagram-logo.png" alt="Instagram logo">
+            </a>
+        </section>
+
         <section class="slogan">
             <div class="animation-slogan">
-                <span style="font-weight: 600; font-size: 40px; font-family: Raleway;">TRADUZINDO</span>
-                <span style="font-size: 40px; font-weight: 800; background-color: white; color: black; width: max-content; padding: 0px 3px;">CRIATIVIDADE</span>
-                <span style="font-family: Raleway; letter-spacing: 4px; font-size: 35px; font-weight: 100;">EM CÓDIGO</span>
+                <span style="font-weight: 600; font-size: 40px; font-family: Raleway;">
+                    TRADUZINDO
+                </span>
+
+                <span style="font-size: 40px; font-weight: 800; background-color: white; color: black; width: max-content; padding: 0px 3px;">
+                    CRIATIVIDADE
+                </span>
+
+                <span style="font-family: Raleway; letter-spacing: 4px; font-size: 35px; font-weight: 100;">
+                    EM CÓDIGO
+                </span>
             </div>
         </section>
 
-        <section class="slide-tecno" id="slideP">
-            <h2>Tecnologias que trabalho:</h2>
-            <div class="tecnologias">
-                <img src="imagens/logo-html5.png" alt="Logo HTML5" class="slides-tecnologias">
-                <img src="imagens/logo-css3.png" alt="Logo CSS3" class="slides-tecnologias">
-                <img src="imagens/logo-java-script.png" alt="Logo JavaScript" class="slides-tecnologias">
-            </div>
-        </section>
+        <section class="tecnologias">
 
-        <section class="slide-tecno" id="slideG">
-            <h2>Tecnologias que trabalho:</h2>
-            <div class="tecnologias">
-                <img src="imagens/logo-html5.png" alt="Logo HTML5">
-                <img src="imagens/logo-css3.png" alt="Logo CSS3">
-                <img src="imagens/logo-java-script.png" alt="Logo JavaScript">
-            </div>
         </section>
     </main>
-    
-    <section id="sobre">
-        <h2>Sobre mim</h2>
 
-        <div class="flex-sobre">
-            <section class="perfil">
-                <img src="imagens/perfil-pequeno.jpg" alt="Minha foto" class="foto-pequena">
-                <img src="imagens/perfil-grande.jpg" alt="Minha foto" class="foto-grande">
-            </section>
-            <section class="texto-sobre">
+    <section id="sobre">
+        <h2>SOBRE MIM</h2>
+
+        <section>
+            <div>
                 <p><span style="font-size: 30px;">Olá</span>, meu nome é Rafael, tenho 20 anos e sou um entusiasta do desenvolvimento Front-End, além de músico nas horas vagas.</p>
+
                 <p>Minha jornada na programação começou quando assisti um vídeo do Curso em Vídeo sobre JavaScript, e desde então, fiquei apaixonado pelo mundo do desenvolvimento. Iniciei meus estudos em JavaScript e HTML5-CSS3 com grande desejo de evolução, e estou determinado a me tornar um Programador Full-Stack no futuro.</p>
+
                 <p>Atualmente, estou aprimorando minhas habilidades por meio do conteúdo disponível na web e pela plataforma do Curso em Vídeo onde já conquistei certificações em alguns cursos. Além disso, crio meus próprios projetos para exercitar minha criatividade e consolidar meus conhecimentos.</p>
+
                 <p>Acredito que o desenvolvimento Front-End é uma área em constante evolução, isso me motiva a sempre buscar novos desafios e oportunidades para crescer como desenvolvedor.</p>
-            </section>
-        </div>
+            </div>
+
+            <div>
+                <img src="img/IMG_20230426_182142_759.jpg" alt="" class="foto-mobile"> 
+                <img src="img/IMG_20230426_175041_925.webp" alt="" class="foto-desktop">
+            </div>
+        </section>
     </section>
 
-    <section id="projeto">
+    <section id="projetos">
         <h2>PROJETOS</h2>
 
-        <section class="grid-projetos">
-            <section class="container-projeto">
-                <div class="titulo-projeto">
-                    
+        <section class="container-project">
+            <article class="project">
+                <img
+                    src="img/controle-de-video-game.png"
+                    style="border: 5px inset #717aa1"
+                />
+                <div class="project-text">
+                    <h3>Mini Games</h3>
+                    <p>
+                        Jogos Clássicos feitos com Html, Css e Java Script.
+                    </p>
+                    <button class="btn-show-project">Ver mais</button>
+                </div>
+            </article>
+
+            <article class="project">
+                <img src="img/task.png" style="border: 5px inset #3486af" />
+                <div class="project-text">
+                    <h3>Lista de Tarefas</h3>
+                    <p>
+                        Uma "To do List" dinâmica feita com Html, Css e Java
+                        Script.
+                    </p>
+                    <button class="btn-show-project">Ver mais</button>
+                </div>
+            </article>
+
+            <article class="project">
+                <img
+                    src="img/lading-pages-icon.png"
+                    style="border: 5px inset #cfac52"
+                />
+                <div class="project-text">
+                    <h3>Lading Pages</h3>
+                    <p>Páginas feitas para lojas, comércios e empresas.</p>
+                    <button class="btn-show-project">Ver mais</button>
+                </div>
+            </article>
+        </section>
+
+    </section>
+
+    <!--Painel de exibição dos projetos-->
+    <section id="showProject">
+        <!--Painel de apresentação de games-->
+        <section class="show-project">
+            <!--Cabeçalho do painel de exibição-->
+            <section class="show-project-header">
+                <button onclick="closeProjectsPanel()">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </section>
+            <!--Conteúdo do painel de exibição (Snake Game)-->
+            <section class="show-project-content">
+                <button onclick="backInfo('.replace-snake')">
+                    <span class="material-symbols-outlined"
+                        >chevron_left</span
+                    >
+                </button>
+
+                <div class="project-img-txt">
+                    <h2>Snake Game</h2>
+
+                    <div
+                        class="replace-img-txt replace-snake"
+                        style="display: block"
+                    >
+                        <img src="img/snake-game-img/snakeThumb1.png" />
+                        <p>
+                            O jogo apresenta uma estrutura HTML, com
+                            seções para configurações, tela do jogo, e
+                            botões de controle. O CSS é utilizado para
+                            estilizar os elementos visuais do jogo, como
+                            botões, menu e canvas.
+                        </p>
+                    </div>
+
+                    <div class="replace-img-txt replace-snake">
+                        <img src="img/snake-game-img/snakeThumb2.png" />
+                        <p>
+                            O JavaScript controla toda a lógica do jogo,
+                            incluindo movimento da cobra, detecção de
+                            colisões, geração de comida, pontuação e
+                            configurações. Também responde às interações
+                            do usuário, como cliques em botões e teclas
+                            do teclado, para controlar a cobrinha e
+                            interagir com o jogo.
+                        </p>
+                    </div>
+
+                    <div class="replace-img-txt replace-snake">
+                        <img src="img/snake-game-img/snakeThumb3.png" />
+                        <p>
+                            O jogo oferece uma variedade de
+                            configurações que podem ser ajustadas pelo
+                            jogador, como velocidade da cobra, cores da
+                            cobra e da comida, e estilos de controle. O
+                            jogador pode pausar e retomar o jogo a
+                            qualquer momento, além de reiniciá-lo após o
+                            fim da partida.
+                        </p>
+                    </div>
+
+                    <a
+                        href="https://rafaelcostasilva1501.github.io/Snake-Game/"
+                        >Jogar</a
+                    >
                 </div>
 
-                <div class="img-projeto">
-                    <img src="imagens/" alt="">
+                <button onclick="nextInfo('.replace-snake')">
+                    <span class="material-symbols-outlined"
+                        >chevron_right</span
+                    >
+                </button>
+            </section>
+
+            <!--Conteúdo do painel de exibição (Paint)-->
+            <section class="show-project-content">
+                <button onclick="backInfo('.replace-paint')">
+                    <span class="material-symbols-outlined"
+                        >chevron_left</span
+                    >
+                </button>
+
+                <div class="project-img-txt">
+                    <h2>Paint</h2>
+
+                    <div
+                        class="replace-img-txt replace-paint"
+                        style="display: block"
+                    >
+                        <img src="img/paint-img/paintThumb1.png" />
+                        <p>
+                            A página permite aos usuários desenhar
+                            livremente no canvas usando diferentes
+                            ferramentas, como pincel, balde de tinta e
+                            borracha.
+                        </p>
+                    </div>
+
+                    <div class="replace-img-txt replace-paint">
+                        <img src="img/paint-img/paintThumb2.png" />
+                        <p>
+                            Além disso, é possível ajustar o tamanho do
+                            pincel e escolher cores personalizadas.
+                        </p>
+                    </div>
+
+                    <div class="replace-img-txt replace-paint">
+                        <img src="img/paint-img/paintThumb3.png" />
+                        <p>
+                            Os desenhos podem ser salvos localmente e
+                            posteriormente visualizados na galeria de
+                            imagens integrada.
+                        </p>
+                    </div>
+
+                    <a
+                        href="https://rafaelcostasilva1501.github.io/Paint/"
+                        >Jogar</a
+                    >
                 </div>
 
-                <div class="texto-projeto"></div>
+                <button onclick="nextInfo('.replace-paint')">
+                    <span class="material-symbols-outlined"
+                        >chevron_right</span
+                    >
+                </button>
+            </section>
 
-                <div class="ver-projeto"></div>
+            <!--Rodapé do painel de exibição-->
+            <section class="show-project-footer">
+                <button class="btn-replace-project"></button>
+                <button class="btn-replace-project"></button>
+            </section>
+        </section>
+
+        <!--Painel de apresentação de Aplicativos-->
+        <section class="show-project">
+            <!--Cabeçalho do painel de exibição-->
+            <section class="show-project-header">
+                <button onclick="closeProjectsPanel()">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </section>
+
+            <section class="show-project-content">
+                <button>
+                    <span class="material-symbols-outlined"
+                        >chevron_left</span
+                    >
+                </button>
+
+                <div class="project-img-txt">
+                    <h2>Paint</h2>
+                    <img src="img/paintThumb1.png" />
+                    <p>
+                        O Jogo da cobrinha (Snake Game) implementado em
+                        HTML, CSS e JavaScript. O jogo apresenta uma
+                        estrutura HTML bem organizada, com seções para
+                        configurações, tela do jogo, e botões de
+                        controle. O CSS é utilizado para estilizar os
+                        elementos visuais do jogo, como botões, menu e
+                        canvas.
+                    </p>
+                    <a
+                        href="https://rafaelcostasilva1501.github.io/Snake-Game/"
+                        >Jogar</a
+                    >
+                </div>
+
+                <button>
+                    <span class="material-symbols-outlined"
+                        >chevron_right</span
+                    >
+                </button>
+            </section>
+
+            <!--Rodapé do painel de exibição-->
+            <section class="show-project-footer">
+                <button class="btn-replace-project"></button>
+                <button class="btn-replace-project"></button>
+                <button></button>
+            </section>
+        </section>
+
+        <!--Painel de apresentação de Landing Pages-->
+        <section class="show-project">
+            <!--Cabeçalho do painel de exibição-->
+            <section class="show-project-header">
+                <button onclick="closeProjectsPanel()">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </section>
+            <!--Conteúdo do painel de exibição-->
+            <section class="show-project-content">
+                <div></div>
+                <div>
+                    <img />
+                    <p>Landing Pages</p>
+                </div>
+                <div></div>
+            </section>
+            <!--Rodapé do painel de exibição-->
+            <section class="show-project-footer">
+                <button></button>
+                <button></button>
+                <button></button>
             </section>
         </section>
     </section>
 
-    <section id="projetos" class="slides">
+    <section id="certification">
+        <section class="container-slides">
+            <h3>CERTIFICAÇÕES</h3>
 
-        <div class="flex-projetos">
-            <div>
-                <h3>Snake Game</h3>
-                <section class="container-projetos">
-                    <div>
-                        <img src="imagens/projeto-snake-game.png" alt="Projeto Snake Game">
-                    </div>
-                    <div class="container-texto-projeto">
-                        <p>O "Snake Game" é um clássico jogo da cobrinha desenvolvido utilizando HTML, CSS e JavaScript. Neste projeto, os princípios básicos da programação front-end foram aplicados para criar uma experiência interativa e divertida.</p>
-                    </div>
-                    <div class="container-btn-projetos">
-                        <button>
-                            <a href="https://rafaelcostasilva1501.github.io/Snake-Game/">
-                                <span>Ver Projeto</span>
-                                <span class="material-symbols-outlined">desktop_windows</span>
-                            </a>
-                        </button>
-                        <button>
-                            <a href="https://github.com/RafaelCostaSIlva1501/Snake-Game.git">
-                                <span>Código Fonte</span>
-                                <span class="material-symbols-outlined">code</span>
-                            </a>
-                        </button>
-                    </div>
-                </section>
+            <div class="replace-slide">
+                <article class="slide certification-slide">
+                    <h4>Certificado de HTML5 e CSS3</h4>
+                    <p>
+                        Certificado emitido pelo Curso em Vídeo. Este curso me proporcionou uma base sólida em HTML e CSS, incluindo design responsivo e html semântico.
+                    </p>
+                    <a href="Certificados/Certificado Rafael da Costa Silva HTML5 e CSS3.pdf">Ver Certificação</a>
+                </article>
+
+                <article class="slide certification-slide">
+                    <h4>Certificado de JavaScript</h4>
+                    <p>
+                        Certificado emitido pelo Curso em Vídeo. Este curso me proporcionou uma base sólida em JavaScript, como estruturas de controle, manipulação do DOM e iteração com eventos.
+                    </p>
+                    <a href="certificados/Certificado Rafael da Costa Silva JavaScript.pdf">Ver Certificação</a>
+                </article>
+
+                <article class="slide certification-slide">
+                    <h4>Certificado de AWS</h4>
+                    <p>
+                        O projeto 'Teu Futuro re/start' me proporcionou uma base sólida em computação em nuvem e desenvolvimento de habilidades de Soft Skills.
+                    </p>
+                    <a href="certificados/Certificado Rafael da Costa Silva AWS.pdf">Ver Certificação</a>
+                </article>
             </div>
 
-            <div>
-                <h3>Paint</h3>
-                <section class="container-projetos">
-                    <div>
-                        <img src="imagens/projeto-paint.png" alt="Projeto Paint">
-                    </div>
-                    <div class="container-texto-projeto">
-                        <p>O projeto "Paint" é uma aplicação web que oferece uma experiência de pintura digital simples e intuitiva. Desenvolvido utilizando HTML, CSS e JavaScript, o Paint permite que os usuários expressem sua criatividade através de diferentes ferramentas e opções de personalização.</p>
-                    </div>
-                    <div class="container-btn-projetos">
-                        <button>
-                            <a href="">
-                                <span>Ver Projeto</span>
-                                <span class="material-symbols-outlined">desktop_windows</span>
-                            </a>
-                        </button>
-                        <button>
-                            <a href="">
-                                <span>Código Fonte</span>
-                                <span class="material-symbols-outlined">code</span>
-                            </a>
-                        </button>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </section>
-
-    <section id="certificado">
-        <section class="certificados">
-            <h4>CERTIFICAÇÕES</h4>
-
-            <div class="container-slides">
-                <section class="certificados-slides" id="certiHTMLCSS">
-                    <h5>Certificado de HTML5 e CSS3</h5>
-                    <p>Certificado emitido pelo Curso em Vídeo. Este curso me proporcionou uma base sólida em HTML e CSS, incluindo design responsivo e html semântico.</p>
-                    <div class="links">
-                        <a href="certificados/Html e Css 5 módulos.pdf" target="_blank">Ver certificação</a>
-                        <a href="certificados/Html e Css 5 módulos.pdf" download>
-                            <span class="material-symbols-outlined">download</span>
-                        </a>
-                    </div>
-                </section>
-
-                <section class="certificados-slides" id="certiJS">
-                    <h5>Certificado de JavaScript</h5>
-                    <p>Certificado emitido pelo Curso em Vídeo. Este curso me proporcionou uma base sólida em JavaScript, como estruturas de controle, manipulação do DOM e iteração com eventos.</p>
-                    <div class="links">
-                        <a href="certificados/JavaScript.pdf" target="_blank">Ver certificação</a>
-                        <a href="certificados/JavaScript.pdf" download>
-                            <span class="material-symbols-outlined">download</span>
-                        </a>
-                    </div>
-                </section>
-
-                <section class="certificados-slides" id="certiAWS">
-                    <h5>Certificado de AWS</h5>
-                    <p>O projeto 'Teu Futuro re/start' me proporcionou uma base sólida em computação em nuvem e desenvolvimento de habilidades de Soft Skills.</p>
-                    <div class="links">
-                        <a href="certificados/AWS.pdf" target="_blank">Ver certificação</a>
-                        <a href="certificados/AWS.pdf" download>
-                            <span class="material-symbols-outlined">download</span>
-                        </a>
-                    </div>
-                </section>
-                
-            </div>
-
-            <div class="btns-slide">
-                <button id="btnHTML" onclick="trocarCertificado('htmlcss', 'btnHTML')"></button>
-                <button id="btnJS" onclick="trocarCertificado('javascript', 'btnJS')"></button>
-                <button id="btnAWS" onclick="trocarCertificado('aws', 'btnAWS')"></button>
+            <div class="slide-btn">
+                <button class="certification-btn"></button>
+                <button class="certification-btn"></button>
+                <button class="certification-btn"></button>
             </div>
         </section>
 
-        <section class="certificados">
-            <h4>DIFERENCIAIS</h4>
+        <section class="container-slides">
+            <h3>DIFERENCIAIS</h3>
 
-            <div class="container-slides">
-                <section class="certificados-slides" id="cleanCode">
-                    <h5>Clean Code</h5>
-                    <p>Prezo por um código limpo e bem comentado, isso facilita a compreensão, colaboração e manutenção, tornando o desenvolvimento mais eficiente e escalável.</p>
-                </section>
+            <div class="replace-slide">
+                <article class="slide diferencial-slide">
+                    <h4>Clean Code</h4>
+                    <p>
+                        Prezo por um código limpo e bem comentado, isso facilita a compreensão, colaboração e manutenção, tornando o desenvolvimento mais eficiente e escalável.
+                    </p>
+                </article>
 
-                <section class="certificados-slides" id="comunicacao">
-                    <h5>Comunicação efetiva</h5>
-                    <p>Boa capacidade de expressar ideias e soluções complexas de forma simples e compreensível para pessoas que não são programadoras.</p>
-                </section>
+                <article class="slide diferencial-slide">
+                    <h4>Comunicação efetiva</h4>
+                    <p>
+                        Boa capacidade de expressar ideias e soluções complexas de forma simples e compreensível para pessoas que não são programadoras.
+                    </p>
+                </article>
 
-                <section class="certificados-slides" id="aprendizado">
-                    <h5>Aprendizado contínuo</h5>
-                    <p>Sempre em busca de conhecer novas tecnologias e tendências para melhorar minhas capacidades como desenvolvedor.</p>
-                </section>
+                <article class="slide diferencial-slide">
+                    <h4>Aprendizado contínuo</h4>
+                    <p>
+                        Sempre em busca de conhecer novas tecnologias e tendências para melhorar minhas capacidades como desenvolvedor.
+                    </p>
+                </article>
 
-
-                <section class="certificados-slides" id="design">
-                    <h5>Boas noções de design</h5>
-                    <p>Usabilidade, estética e experiência do usuário, me permitem criar interfaces e produtos mais atrativos e funcionais.</p>
-                </section>
+                <article class="slide diferencial-slide">
+                    <h4>Boas noções de design</h4>
+                    <p>
+                        Usabilidade, estética e experiência do usuário, me permitem criar interfaces e produtos mais atrativos e funcionais.
+                    </p>
+                </article>
             </div>
 
-            <div class="btns-slide">
-                <button id="btnCleanCode" onclick="trocarDiferencial('cleanCode', 'btnCleanCode')"></button>
-                <button id="btnComunicacao" onclick="trocarDiferencial('comunicacao', 'btnComunicacao')"></button>
-                <button id="btnAprendizado" onclick="trocarDiferencial('aprendizado', 'btnAprendizado')"></button>
-                <button id="btnDesign" onclick="trocarDiferencial('design', 'btnDesign')"></button>
+            <div class="slide-btn">
+                <button class="diferencial-btn"></button>
+                <button class="diferencial-btn"></button>
+                <button class="diferencial-btn"></button>
+                <button class="diferencial-btn"></button>
             </div>
         </section>
     </section>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://www.workana.com/freelancer/3571ed713e65d54c06091a86e69fd326">Rafael da Costa Silva</a></p>
+    </footer>
 
     <script src="scripts/script.js"></script>
+    
 </body>
 </html>
