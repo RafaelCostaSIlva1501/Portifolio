@@ -351,7 +351,7 @@ ul li a {
     transform: translate(-50%, -50%);
     width: 95vw;
     max-width: 600px;
-    height: 95vh;
+    height: 90vh;
     background-color: var(--corBaseEscura2);
     border: 1px solid var(--corBaseClara);
     z-index: 1;
