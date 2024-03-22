@@ -142,6 +142,10 @@
         width: 100%;
     }
 
+    #showProject {
+        height: 95vh;
+    }
+
     #certification {
         flex-direction: row;
     }

@@ -199,12 +199,14 @@ ul li a {
     }
 }
 
+/*Primeira palavra do slogan*/
 .traduzindo {
     font-weight: 600;
     font-size: calc(40px + 2vw);
     font-family: Raleway;
 }
 
+/*Segunda palavra do slogan*/
 .criatividade {
     font-size: calc(40px + 2vw);
     font-weight: 800;
@@ -214,6 +216,7 @@ ul li a {
     padding: 0px 3px;
 }
 
+/*Terceira palavra do slogan*/
 .codigo {
     font-family: Raleway;
     letter-spacing: 4px;
@@ -241,6 +244,7 @@ ul li a {
     letter-spacing: 4px;
 }
 
+/*Conteúdo dentro da sessão "sobre"*/
 .content-sobre {
     display: flex;
     flex-direction: column;
@@ -250,6 +254,7 @@ ul li a {
     margin-top: 30px;
 }
 
+/*Container da minha foto e midias*/
 .img-sobre {
     display: flex;
     flex-direction: column;
@@ -257,6 +262,7 @@ ul li a {
     gap: 20px;
 }
 
+/*Minha foto */
 .img-sobre img {
     display: block;
     width: 250px;
@@ -303,14 +309,15 @@ ul li a {
 #projetos {
     display: flex;
     flex-direction: column;
-    padding: 0px 0px 50px 0px;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 50px 0px;
 }
 
 /*Título da sessão*/
 #projetos h2 {
     color: var(--cor03);
     text-align: center;
-    margin: 10px 0px;
 }
 
 /*Container que contém os projetos*/
@@ -336,11 +343,13 @@ ul li a {
     line-height: 20px;
 }
 
+/*Icones dos projetos*/
 .project img {
     border-radius: 5px;
     width: 100px;
 }
 
+/*Container do texto dos projetos*/
 .project-text {
     display: flex;
     flex-direction: column;
@@ -348,6 +357,7 @@ ul li a {
     color: var(--corTexto);
 }
 
+/*Botão "Ver mais"*/
 .project-text button {
     width: max-content;
     background: none;
@@ -358,16 +368,19 @@ ul li a {
     cursor: pointer;
 }
 
+/*Botão "Ver mais" ao passar o cursor em cima*/
 .project-text button:hover {
     background-color: var(--corTexto);
     border: 2px solid var(--corTexto);
     color: var(--corBaseEscura);
 }
 
+/*Botão "Ver mais" ao clicar em cima*/
 .project-text button:active {
     transform: scale(0.9);
 }
 
+/*Container geral de exibição dos projetos*/
 #showProject {
     display: none;
     position: fixed;
@@ -376,12 +389,13 @@ ul li a {
     transform: translate(-50%, -50%);
     width: 95vw;
     max-width: 600px;
-    height: 94vh;
+    height: 90vh;
     background-color: var(--corBaseEscura2);
     border: 1px solid var(--corBaseClara);
     z-index: 1;
 }
 
+/*Sessões de projetos exibidos*/
 .show-project {
     display: flex;
     flex-direction: column;
@@ -390,6 +404,7 @@ ul li a {
     height: 100%;
 }
 
+/*cabeçalho*/
 .show-project-header {
     display: flex;
     flex-direction: row-reverse;
@@ -398,6 +413,7 @@ ul li a {
     border-bottom: 1px solid var(--corBaseClara);
 }
 
+/*Botão par fechar o menu*/
 .show-project-header button {
     display: flex;
     justify-content: center;
@@ -410,6 +426,7 @@ ul li a {
     cursor: pointer;
 }
 
+/*Container dos conteúdos exibidos (projetos)*/
 .show-project-content {
     display: none;
     flex-direction: row;
@@ -419,6 +436,7 @@ ul li a {
     padding: 2px;
 }
 
+/*Botão que troca as imagens de um projeto*/
 .show-project-content button {
     background: none;
     border: none;
@@ -429,21 +447,25 @@ ul li a {
     margin: auto 0px;
 }
 
+/*Botão que troca as imagens de um projeto ao passar o mouse em cima*/
 .show-project-content button:hover {
     background-color: #ffffff25;
     transition: background-color 0.3s ease-in-out;
 }
 
+/*Container de imagem e texto dos projetos exibidos*/
 .project-img-txt {
     display: flex;
     flex-direction: column;
 }
 
+/*Titulo do projeto (Nome)*/
 .project-img-txt h2 {
     text-align: center;
     color: var(--corTexto);
 }
 
+/*Imagem do projeto*/
 .project-img-txt img {
     display: block;
     width: 300px;
@@ -452,17 +474,20 @@ ul li a {
     border-radius: 5px;
 }
 
+/*Texto do projeto*/
 .project-img-txt p {
     text-align: center;
     color: var(--corTexto);
     margin-top: 5px;
 }
 
+/*Configuração para esconder os projetos*/
 .replace-img-txt {
     height: 90%;
     display: none;
 }
 
+/*Botão para ir ver o projeto*/
 .project-img-txt a {
     align-self: flex-end;
     display: block;
@@ -477,6 +502,7 @@ ul li a {
     animation: jogar 2s infinite;
 }
 
+/*animação de luz no projeto*/
 @keyframes jogar {
     0%,
     100% {
@@ -487,11 +513,13 @@ ul li a {
     }
 }
 
+/*Botão para ver projeto após passar o cursor*/
 .project-img-txt a:hover {
     background-color: var(--corTexto);
     color: var(--corBaseEscura);
 }
 
+/*Rodapé da sessão de exibição dos projetos*/
 .show-project-footer {
     display: flex;
     flex-direction: row;
@@ -503,6 +531,7 @@ ul li a {
     border-top: 1px solid var(--corBaseClara);
 }
 
+/*Botões para trocar o projeto exibido*/
 .show-project-footer button {
     width: 12px;
     height: 12px;
